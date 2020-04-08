@@ -85,3 +85,8 @@ print("--- %s seconds ---" % (time.time() - start_time))
 
 >>> import sys
 >>> Phylo.write(tree, sys.stdout, "phyloxml")
+
+tree = Phylo.read('tree1.xml', 'phyloxml') 
+   ...: print(tree)
+
+Phylo.write([tree], 'example-both.tree', 'newick')  
